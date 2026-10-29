@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Barber Clan — барбершоп в Воронеже</title>
+<meta name="description" content="Барбершоп Barber Clan на 20-летия Октября, 92. Модельная стрижка 800 ₽, борода, опасная бритва. Ежедневно 10:00–21:00. Рейтинг 4,9 в 2ГИС и 5,0 в Dikidi.">
+<!-- Демо-версия: пока владелец не одобрил сайт, поисковики его не показывают. После покупки убрать эту строку. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Barber Clan — барбершоп в Воронеже">
+<meta property="og:description" content="Стрижём и бреем по лучшим ценам в городе. 20-летия Октября, 92. Ежедневно 10:00–21:00.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarberShop",
+  "name": "Barber Clan",
+  "telephone": "+7 909 212-49-79",
+  "priceRange": "100–1600 ₽",
+  "address": {"@type": "PostalAddress", "streetAddress": "улица 20-летия Октября, 92, 1 этаж", "addressLocality": "Воронеж", "postalCode": "394006", "addressCountry": "RU"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 51.656767, "longitude": 39.186791},
+  "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "10:00", "closes": "21:00"}],
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "59", "bestRating": "5"},
+  "sameAs": ["https://2gis.ru/voronezh/firm/70000001099850089", "https://dikidi.ru/1829097"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111'/%3E%3Ctext x='16' y='22' font-family='Arial Black,sans-serif' font-size='15' font-weight='900' fill='%23f2711c' text-anchor='middle'%3EBC%3C/text%3E%3C/svg%3E">
+<style>
+  /* Макет: уличный плакат. Белый фон, чёрный узкий шрифт заглавными, оранжевый акцент — от граффити в зале.
+     Фирменная деталь — зигзаг «ёлочкой», как чёрно-белый пол Barber Clan. */
+  :root{
+    --bg:#ffffff;
+    --soft:#f3f2ef;
+    --ink:#111111;
+    --muted:#5e5e5b;
+    --line:#e3e2de;
+    --orange:#f2711c;
+    --on-orange:#111111;
+    --star:#f2a516;
+    --open:#1f8a4b;
+    --display:"Oswald","Arial Narrow",ui-sans-serif,sans-serif;
+    --body:"Rubik",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --wrap:1200px;
+    --zigzag:linear-gradient(135deg,var(--ink) 25%,transparent 25%) -12px 0/24px 24px,linear-gradient(225deg,var(--ink) 25%,transparent 25%) -12px 0/24px 24px,linear-gradient(315deg,var(--ink) 25%,transparent 25%) 0 0/24px 24px,linear-gradient(45deg,var(--ink) 25%,#fff 25%) 0 0/24px 24px;
+    color-scheme:light;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:76px}
+  body{background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:var(--orange);color:var(--ink)}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  svg{display:block;flex:none}
+  :focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+  h1,h2,h3{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.01em;line-height:1;text-wrap:balance}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 26px;border:2px solid var(--ink);cursor:pointer;font:600 16px/1 var(--body);white-space:nowrap;transition:transform .15s,box-shadow .15s,background .2s;box-shadow:4px 4px 0 var(--ink)}
+  .btn svg{width:18px;height:18px}
+  .btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+  .btn-o{background:var(--orange);color:var(--on-orange)}
+  .btn-w{background:#fff;color:var(--ink)}
+  .btn-sm{height:42px;padding:0 16px;font-size:15px;box-shadow:3px 3px 0 var(--ink)}
+
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:#fff}
+  .header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:#fff;border-bottom:2px solid var(--ink)}
+  .header .wrap{display:flex;align-items:center;gap:28px;height:70px}
+  .logo{font:700 26px/1 var(--display);text-transform:uppercase;letter-spacing:.02em}
+  .logo span{background:var(--orange);padding:0 6px;margin-left:4px}
+  .nav{display:flex;gap:24px;font-weight:500;font-size:15px}
+  .nav a:hover{color:var(--orange)}
+  .header-right{margin-left:auto;display:flex;align-items:center;gap:18px}
+  .header-phone{font-weight:600;font-size:15px;white-space:nowrap}
+
+  .zig{height:12px;background:var(--zigzag)}
+
+  /* первый экран: фото зала, название, строка, кнопка */
+  .hero{position:relative;isolation:isolate;overflow:hidden;color:#fff;min-height:clamp(540px,78vh,720px);display:flex;align-items:flex-end;background:#111}
+  .hero > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;z-index:-2;animation:zoom 1.8s cubic-bezier(.2,.8,.2,1) both}
+  .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(17,17,17,.9) 0%,rgba(17,17,17,.62) 45%,rgba(17,17,17,.1) 85%),linear-gradient(0deg,rgba(17,17,17,.7),transparent 45%)}
+  .hero .wrap{width:100%;padding-block:clamp(40px,6vw,80px)}
+  .badge{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--ink);padding:8px 14px;font-weight:600;font-size:14px;margin-bottom:22px;border:2px solid var(--ink)}
+  .badge .stars{color:var(--star)}
+  .stars{display:flex;gap:2px}
+  .stars svg{width:14px;height:14px}
+  .hero h1{font-size:clamp(64px,11vw,150px);line-height:.88}
+  .hero h1 small{display:block;font-size:clamp(18px,2vw,26px);letter-spacing:.3em;color:var(--orange);margin-bottom:12px}
+  .hero .lead{font-size:clamp(17px,1.6vw,21px);max-width:30em;margin:22px 0 30px;color:#eee}
+  .cta{display:flex;flex-wrap:wrap;gap:14px}
+  @keyframes zoom{from{transform:scale(1.08)}}
+
+  .facts{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:2px solid var(--ink)}
+  .fact{padding:24px;min-width:0}
+  .fact + .fact{border-left:2px solid var(--ink)}
+  .fact b{display:flex;align-items:center;gap:6px;font:700 34px/1 var(--display);font-variant-numeric:tabular-nums}
+  .fact b svg{width:20px;height:20px;color:var(--star)}
+  .fact span{font-size:14px;color:var(--muted)}
+  .status{display:inline-flex;align-items:center;gap:10px}
+  .status i{width:11px;height:11px;background:var(--muted)}
+  .status.is-open i{background:var(--open)}
+
+  .section{padding:clamp(72px,9vw,116px) 0}
+  .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 40px;margin-bottom:clamp(30px,4vw,48px)}
+  .head > div{min-width:0}
+  .kicker{display:inline-block;background:var(--ink);color:#fff;font:500 14px/1 var(--display);letter-spacing:.2em;text-transform:uppercase;padding:7px 10px;margin-bottom:14px}
+  .head h2{font-size:clamp(40px,6vw,78px)}
+  .head p{color:var(--muted);max-width:30em}
+
+  /* прайс */
+  .prices{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+  .p{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 16px;padding:18px 0;border-bottom:2px solid var(--ink);align-items:baseline}
+  .p span{font-weight:600;font-size:18px}
+  .p small{grid-column:1;font-size:14px;color:var(--muted)}
+  .p b{grid-row:1;grid-column:2;font:700 26px/1 var(--display);white-space:nowrap}
+  .p.top b{background:var(--orange);padding:2px 8px}
+
+  /* работы */
+  .works{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .work{padding:0;border:2px solid var(--ink);background:var(--soft);aspect-ratio:4/5;overflow:hidden;cursor:zoom-in;max-width:100%}
+  .work img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+  .work:hover img{transform:scale(1.05)}
+  .work.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+
+  /* мастера */
+  .masters{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .master{border:2px solid var(--ink);padding:24px;display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;align-items:center;box-shadow:6px 6px 0 var(--ink);background:#fff}
+  .ini{width:72px;height:72px;display:grid;place-items:center;background:var(--orange);font:700 34px/1 var(--display);border:2px solid var(--ink)}
+  .master h3{font-size:32px}
+  .master p{font-size:14px;color:var(--muted);margin-top:4px}
+  .master blockquote{grid-column:1/-1;font-size:15px;color:var(--muted);border-left:4px solid var(--orange);padding-left:12px}
+  .master .btn{grid-column:1/-1;width:100%}
+
+  /* процесс */
+  .process{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:12px}
+  .process button{padding:0;border:2px solid var(--ink);overflow:hidden;cursor:zoom-in;background:var(--soft);min-width:0;aspect-ratio:3/4;max-width:100%}
+  .process img{width:100%;height:100%;object-fit:cover}
+  .process button:first-child{aspect-ratio:auto;grid-row:span 1}
+
+  /* отзывы */
+  .reviews{columns:3 300px;column-gap:16px}
+  .review{break-inside:avoid;margin-bottom:16px;padding:22px;border:2px solid var(--ink);display:grid;gap:12px;background:#fff}
+  .review .stars{color:var(--star)}
+  .review footer{font-size:14px;color:var(--muted)}
+  .review footer b{color:var(--ink)}
+  .src{display:inline-block;font:500 11px/1 var(--display);letter-spacing:.12em;text-transform:uppercase;background:var(--soft);padding:4px 6px;margin-left:6px}
+
+  /* контакты */
+  .contacts{display:grid;grid-template-columns:.95fr 1.05fr;gap:16px}
+  .info{border:2px solid var(--ink);padding:26px;display:grid;gap:16px;align-content:start}
+  .r{display:grid;grid-template-columns:100px 1fr;gap:12px}
+  .r + .r{padding-top:16px;border-top:2px solid var(--line)}
+  .r dt{font:500 14px/1.5 var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .r dd small{display:block;color:var(--muted);font-size:14px}
+  .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+  .map{position:relative;min-height:440px;border:2px solid var(--ink);overflow:hidden;background:var(--soft)}
+  .map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .map .btn{position:absolute;left:16px;top:16px;z-index:2}
+
+  .final{background:var(--orange);border-block:2px solid var(--ink);padding:clamp(56px,7vw,88px) 0}
+  .final .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+  .final h2{font-size:clamp(40px,6vw,76px)}
+  .final p{margin-top:10px;font-weight:500}
+  .final .btn{background:var(--ink);color:#fff;box-shadow:4px 4px 0 #fff}
+  .footer{padding-block:24px 30px;font-size:14px;color:var(--muted)}
+  .footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+  .footer a{border-bottom:1px solid var(--line)}
+
+  .lightbox{border:0;padding:0;background:transparent;margin:auto;max-width:min(92vw,1000px);max-height:90vh;overflow:visible}
+  .lightbox::backdrop{background:rgba(17,17,17,.92)}
+  .lightbox img{max-width:min(92vw,1000px);max-height:86vh;width:auto;height:auto;border:3px solid #fff}
+  .lightbox button{position:fixed;top:max(16px,env(safe-area-inset-top,0px));right:max(16px,env(safe-area-inset-right,0px));width:48px;height:48px;border:2px solid var(--ink);background:var(--orange);cursor:pointer;display:grid;place-items:center}
+  .lightbox button svg{width:18px;height:18px}
+  .mobile-bar{display:none}
+
+  .hero .wrap > *{animation:up .8s cubic-bezier(.2,.8,.2,1) both}
+  .hero .wrap > :nth-child(2){animation-delay:.08s}
+  .hero .wrap > :nth-child(3){animation-delay:.16s}
+  .hero .wrap > :nth-child(4){animation-delay:.24s}
+  @keyframes up{from{opacity:0;transform:translateY(16px)}}
+
+  @media (max-width:1060px){.nav{display:none}.masters{grid-template-columns:1fr 1fr}}
+  @media (max-width:900px){
+    .facts{grid-template-columns:1fr 1fr}
+    .fact:nth-child(3){border-left:0}
+    .fact:nth-child(n+3){border-top:2px solid var(--ink)}
+    .prices,.contacts{grid-template-columns:1fr}
+    .works{grid-template-columns:repeat(3,1fr)}
+    .process{grid-template-columns:1fr 1fr}
+    .process button:first-child{grid-column:span 2;aspect-ratio:16/10}
+    .header-phone{display:none}
+  }
+  @media (max-width:640px){
+    body{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+    .header .btn{display:none}
+    .hero{min-height:600px}
+    .hero::before{background:linear-gradient(0deg,rgba(17,17,17,.95) 0%,rgba(17,17,17,.78) 55%,rgba(17,17,17,.3) 100%)}
+    .cta{flex-direction:column}
+    .cta .btn{width:calc(100% - 4px)}
+    .fact{padding:16px}
+    .fact b{font-size:26px}
+    .works{grid-template-columns:1fr 1fr;gap:8px}
+    .masters{grid-template-columns:1fr}
+    .r{grid-template-columns:1fr;gap:2px}
+    .map{min-height:320px}
+    .mobile-bar{display:grid;grid-template-columns:1fr auto;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:12px max(16px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:#fff;border-top:2px solid var(--ink)}
+    .mobile-bar .btn-w{width:54px;padding:0}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z"/></symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" d="M7 17L17 7M8 7h9v9"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 5h18v16H3z"/><path d="M3 10h18M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></symbol>
+    <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.5 4.3L2.9 11.5c-1.3.5-1.2 1.2-.2 1.5l4.8 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.8-1.5-1.4zM9 14.2l9.1-5.8c.4-.3.8-.1.5.2l-7.6 6.9-.3 3.2z"/></symbol>
+  </defs>
+</svg>
+
+<header class="header">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Barber Clan — наверх">Barber<span>Clan</span></a>
+    <nav class="nav">
+      <a href="#prices">Цены</a>
+      <a href="#works">Работы</a>
+      <a href="#masters">Мастера</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header-right">
+      <a class="header-phone" href="tel:+79092124979">+7 909 212-49-79</a>
+      <a class="btn btn-o btn-sm" href="https://dikidi.ru/1829097" target="_blank" rel="noopener">Записаться</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <img src="img/zal.jpg" alt="Зал Barber Clan: пол ёлочкой, полосатые стены и кресла" fetchpriority="high">
+    <div class="wrap">
+      <span class="badge"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>4,9 в 2ГИС · 5,0 в Dikidi</span>
+      <h1><small>Барбершоп</small>Barber Clan</h1>
+      <p class="lead">Стрижём и бреем по лучшим ценам в городе. Улица 20-летия Октября, 92.</p>
+      <div class="cta">
+        <a class="btn btn-o" href="https://dikidi.ru/1829097" target="_blank" rel="noopener"><svg><use href="#i-cal"/></svg>Записаться онлайн</a>
+        <a class="btn btn-w" href="tel:+79092124979"><svg><use href="#i-phone"/></svg>Позвонить</a>
+      </div>
+    </div>
+  </section>
+  <div class="zig" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="facts">
+      <div class="fact"><b>4,9 <svg><use href="#i-star"/></svg></b><span>59 оценок в 2ГИС</span></div>
+      <div class="fact"><b>от 800 ₽</b><span>модельная стрижка</span></div>
+      <div class="fact"><b>10–21</b><span>каждый день</span></div>
+      <div class="fact"><b class="status" id="status"><i></i><span>—</span></b><span id="status-sub">сейчас</span></div>
+    </div>
+  </div>
+
+  <section class="section" id="prices">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker">Цены</span><h2>Прайс</h2></div>
+        <p>Цены из онлайн-записи Dikidi. Все мастера — топ-барберы.</p>
+      </div>
+      <div class="prices">
+        <div class="p top"><span>Стрижка модельная</span><b>800 ₽</b><small>30 мин</small></div>
+        <div class="p top"><span>Комплекс: стрижка + оформление бороды</span><b>1 600 ₽</b><small>1 ч</small></div>
+        <div class="p"><span>Стрижка удлинённая (ножницами)</span><b>1 200 ₽</b><small>1 ч</small></div>
+        <div class="p"><span>Оформление бороды</span><b>600 ₽</b><small>30 мин</small></div>
+        <div class="p"><span>Стрижка под одну насадку</span><b>600 ₽</b><small>20 мин</small></div>
+        <div class="p"><span>Камуфляж седины</span><b>950 ₽</b><small>40 мин · голова или борода</small></div>
+        <div class="p"><span>Уход</span><b>700 ₽</b><small>20 мин</small></div>
+        <div class="p"><span>Окантовка лезвием</span><b>200 ₽</b><small>15 мин</small></div>
+        <div class="p"><span>Укладка с мытьём головы</span><b>200 ₽</b><small>10 мин</small></div>
+        <div class="p"><span>Пилинг головы</span><b>200 ₽</b><small>5 мин</small></div>
+        <div class="p"><span>Удаление воском</span><b>250 ₽</b><small>5 мин · 1 зона</small></div>
+        <div class="p"><span>Пробор</span><b>150 ₽</b><small>5 мин</small></div>
+        <div class="p"><span>Коррекция бровей</span><b>100 ₽</b><small>5 мин</small></div>
+        <div class="p"><span>Оплата</span><b style="font-size:18px;font-family:var(--body);font-weight:600">карта · наличные · QR</b><small>&nbsp;</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="works" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker">Работы</span><h2>Стрижки</h2></div>
+        <p>Фото работ из 2ГИС. Нажмите, чтобы рассмотреть.</p>
+      </div>
+      <div class="works">
+        <button class="work big" type="button"><img src="img/rabota-1.jpg" alt="Фейд в зале с полом ёлочкой" loading="lazy"></button>
+        <button class="work" type="button"><img src="img/rabota-2.jpg" alt="Короткая стрижка" loading="lazy"></button>
+        <button class="work" type="button"><img src="img/rabota-4.jpg" alt="Стрижка и борода" loading="lazy"></button>
+        <button class="work" type="button"><img src="img/rabota-5.jpg" alt="Укладка и борода" loading="lazy"></button>
+        <button class="work" type="button"><img src="img/rabota-6.jpg" alt="Седая борода" loading="lazy"></button>
+        <button class="work" type="button"><img src="img/rabota-7.jpg" alt="Стрижка с чёлкой" loading="lazy"></button>
+        <button class="work" type="button"><img src="img/rabota-8.jpg" alt="Затылок с фейдом" loading="lazy"></button>
+        <button class="work" type="button"><img src="img/rabota-9.jpg" alt="Борода после оформления" loading="lazy"></button>
+        <button class="work" type="button"><img src="img/detskaya-1.jpg" alt="Детская стрижка" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="masters" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker">Команда</span><h2>Мастера</h2></div>
+        <p>Выберите мастера и запишитесь сразу к нему.</p>
+      </div>
+      <div class="masters">
+        <article class="master">
+          <span class="ini" aria-hidden="true">Р</span>
+          <div><h3>Расул</h3><p>Топ-барбер</p></div>
+          <blockquote>«Расул мастер своего дела, учёл все мои пожелания!»</blockquote>
+          <a class="btn btn-o btn-sm" href="https://dikidi.ru/ru/profile/barber_clan_barbershop_1829097/master/4382935" target="_blank" rel="noopener">Записаться к Расулу</a>
+        </article>
+        <article class="master">
+          <span class="ini" aria-hidden="true">Э</span>
+          <div><h3>Эмиль</h3><p>Топ-барбер</p></div>
+          <blockquote>«Стриг Эмиль. Лучший барбер в Воронеже».</blockquote>
+          <a class="btn btn-o btn-sm" href="https://dikidi.ru/ru/profile/barber_clan_barbershop_1829097/master/4479654" target="_blank" rel="noopener">Записаться к Эмилю</a>
+        </article>
+        <article class="master">
+          <span class="ini" aria-hidden="true">К</span>
+          <div><h3>Камила</h3><p>Топ-барбер</p></div>
+          <blockquote>«Камила очень внимательная и старательная!»</blockquote>
+          <a class="btn btn-o btn-sm" href="https://dikidi.ru/ru/profile/barber_clan_barbershop_1829097/master/4506026" target="_blank" rel="noopener">Записаться к Камиле</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker">Как у нас</span><h2>Опасная бритва и уход</h2></div>
+        <p>Окантовка лезвием, мытьё головы и бритьё — всё в одном визите.</p>
+      </div>
+      <div class="process">
+        <button type="button"><img src="img/britva.jpg" alt="Мастер работает опасной бритвой" loading="lazy"></button>
+        <button type="button"><img src="img/britva-2.jpg" alt="Бритьё лица опасной бритвой" loading="lazy"></button>
+        <button type="button"><img src="img/mytyo.jpg" alt="Мытьё головы" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker">Отзывы</span><h2>Говорят клиенты</h2></div>
+        <p>Отзывы из 2ГИС и Dikidi без правок. В Dikidi — 5,0 по 102 оценкам.</p>
+      </div>
+      <div class="reviews">
+        <article class="review"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>Лучший барбершоп. Все сделали красиво и классно. Если что-то не нравится сразу спрашивают, чтобы вы ушли только с хорошим настроением. Стриг Эмиль. Лучший барбер в Воронеже.</p><footer><b>Денис С.</b> · июль 2026 <span class="src">2ГИС</span></footer></article>
+        <article class="review"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>Всё чётко, спасибо парням, Расул мастер своего дела, приятная обстановка, встреча клиентов. Желаю парням развиваться на большой уровень 💪</p><footer><b>Дмитрий П.</b> · июль 2026 <span class="src">2ГИС</span></footer></article>
+        <article class="review"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>Посетил барбершоп сегодня, стригся у мастера Камиля - результат превзошёл ожидания. Удобное кресло, приятная музыка и внимательное обслуживание. От стрижки в восторге, буду теперь ходить постоянно.</p><footer><b>Andre N.</b> · июнь 2026 <span class="src">2ГИС</span></footer></article>
+        <article class="review"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>Просто лучшие. Очень круто все сделали. Превратили из лешего в очень красивого человека) Спасибо!</p><footer><b>Павел Ж.</b> · июль 2026 <span class="src">2ГИС</span></footer></article>
+        <article class="review"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>Работа сделана шикарно, золотые руки) буду обращаться еще. Все советую!</p><footer><b>Алексей</b> · сентябрь 2026 <span class="src">Dikidi</span></footer></article>
+        <article class="review"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>Дружелюбная и уютная атмосфера, убранство. Ответственный и приятный в общении барбер. Работа сделана быстро и качественно.</p><footer><b>Виктор Д.</b> · август 2025 <span class="src">2ГИС</span></footer></article>
+        <article class="review"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>Барбер Эмиль очень круто подстриг. Я в восторге от сервиса , обязательно приду ещё к нему</p><footer><b>Фарид А.</b> · июль 2026 <span class="src">2ГИС</span></footer></article>
+        <article class="review"><span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><p>Сделал все просто идеально</p><footer><b>Никита</b> · сентябрь 2026 <span class="src">Dikidi</span></footer></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacts" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker">Контакты</span><h2>Как найти</h2></div>
+        <p>Ленинский район, первый этаж.</p>
+      </div>
+      <div class="contacts">
+        <dl class="info">
+          <div class="r"><dt>Адрес</dt><dd>Улица 20-летия Октября, 92, 1 этаж<small>Ленинский район, Воронеж, 394006</small></dd></div>
+          <div class="r"><dt>Часы</dt><dd>Ежедневно 10:00–21:00</dd></div>
+          <div class="r"><dt>Телефон</dt><dd><a href="tel:+79092124979">+7 909 212-49-79</a></dd></div>
+          <div class="links">
+            <a class="btn btn-w btn-sm" href="https://wa.me/79092124979" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+            <a class="btn btn-w btn-sm" href="https://t.me/+79092124979" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg>Telegram</a>
+          </div>
+        </dl>
+        <div class="map">
+          <iframe title="Barber Clan на карте" loading="lazy" src="https://yandex.ru/map-widget/v1/?ll=39.186791%2C51.656767&amp;z=16&amp;pt=39.186791%2C51.656767%2Cpm2orl&amp;l=map"></iframe>
+          <a class="btn btn-o btn-sm" href="https://2gis.ru/voronezh/firm/70000001099850089" target="_blank" rel="noopener">Маршрут в 2ГИС <svg><use href="#i-arrow-ur"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <div><h2>Запишись в клан</h2><p>Онлайн-запись через Dikidi — свободное время видно сразу.</p></div>
+      <a class="btn" href="https://dikidi.ru/1829097" target="_blank" rel="noopener"><svg><use href="#i-cal"/></svg>Записаться онлайн</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Barber Clan · Воронеж</span>
+    <span>Рейтинг, фото и отзывы: <a href="https://2gis.ru/voronezh/firm/70000001099850089" target="_blank" rel="noopener">2ГИС</a>, <a href="https://dikidi.ru/1829097" target="_blank" rel="noopener">Dikidi</a></span>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox">
+  <img alt="">
+  <button type="button" aria-label="Закрыть"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.6"/></svg></button>
+</dialog>
+
+<div class="mobile-bar">
+  <a class="btn btn-o" href="https://dikidi.ru/1829097" target="_blank" rel="noopener"><svg><use href="#i-cal"/></svg>Записаться онлайн</a>
+  <a class="btn btn-w" href="tel:+79092124979" aria-label="Позвонить"><svg><use href="#i-phone"/></svg></a>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  (() => {
+    const el = document.getElementById('status');
+    const h = Number(new Intl.DateTimeFormat('ru-RU', {hour: 'numeric', hourCycle: 'h23', timeZone: 'Europe/Moscow'}).format(new Date()));
+    const open = h >= 10 && h < 21;
+    el.classList.toggle('is-open', open);
+    el.querySelector('span').textContent = open ? 'Открыто' : 'Закрыто';
+    document.getElementById('status-sub').textContent = open ? 'до 21:00' : 'откроемся в 10:00';
+  })();
+  const lb = document.getElementById('lightbox');
+  const lbImg = lb.querySelector('img');
+  document.querySelectorAll('.work,.process button').forEach(b => b.addEventListener('click', () => {
+    const img = b.querySelector('img');
+    lbImg.src = img.src; lbImg.alt = img.alt;
+    lb.showModal();
+  }));
+  lb.addEventListener('click', () => lb.close());
+</script>
+</body>
+</html>
